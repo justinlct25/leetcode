@@ -36,7 +36,7 @@ public:
     int orangesRotting(vector<vector<int>>& grid) {
         int row = grid.size(), col = grid[0].size(), orangeCount = 0, minuteCount = 0;
         queue<pair<int, int>> rottenQueue, newRottenQueue;
-        for (int r = 0; r < row; r++) {
+        for (int r = 0; r < row; r++) { // loop for generating queue of rotten orange and counting all orange
             for (int c = 0; c < col; c++) {
                 if (grid[r][c] != 0) {
                     orangeCount++;
